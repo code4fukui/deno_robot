@@ -1,37 +1,41 @@
 # deno_robot
 
-a manipulate Windows/Mac robot on Deno
+A library for manipulating a Windows/Mac robot using Deno.
 
-## Set up
+## Features
+- Control mouse movement and clicks
+- Send keyboard input
+- Retrieve screen size and mouse position
 
-### library
+## Requirements
+- Python 3
+- Flask, PyAutoGUI
 
-```sh
-pip3 install flask
-pip3 install pyautogui
-```
+## Usage
 
-### server
+### Server Setup
+1. Install required libraries:
+   ```sh
+   pip3 install flask
+   pip3 install pyautogui
+   ```
+2. Run the server:
+   ```sh
+   python3 server.py
+   ```
 
-```sh
-python3 server.py
-```
+### Client Usage
+1. Install Deno: https://deno.land/
+2. Run the sample script:
+   ```sh
+   deno run -A sample.js
+   ```
 
-## Sample
+The sample script demonstrates the following actions:
+- Move the mouse to coordinates (10, 10)
+- Click the mouse
+- Press the "down" key
+- Press the "enter" key
 
-```sh
-deno run -A sample.js
-```
-
-```JavaScript
-import { Robot } from "./Robot.js";
-import { endpoint } from "./endpoint.js";
-
-const r = new Robot(endpoint);
-
-// about this mac
-await r.mouseMove(10, 10);
-await r.mouseClick();
-await r.keyPress("down");
-await r.keyPress("enter");
-```
+## License
+MIT License
