@@ -1,5 +1,7 @@
 # deno_robot
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A library for manipulating a Windows/Mac robot using Deno.
 
 ## Features
