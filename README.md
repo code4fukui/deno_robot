@@ -40,4 +40,4 @@ The sample script demonstrates the following actions:
 - Press the "enter" key
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
